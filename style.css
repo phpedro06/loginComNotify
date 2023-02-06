@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;600;700&display=swap');
+
+::-webkit-scrollbar-thumb {
+  background-color: #333333;
+  border-radius: 0.6vh;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  height: 1vh;
+  position: absolute;
+  width: 1vh;
+  background-color: #000000;
+}
+
+* {
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-style: normal;
+  font-family: 'Montserrat';
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  list-style: none;
+  letter-spacing: 0.05vh;
+  resize: none;
+  outline: none;
+  border: 0;
+  user-select: none;
+  color: var(--c2);
+  scroll-behavior: smooth;
+}
+
+/* root */
+:root {
+  --c1: #111;
+  --c2: white;
+  --c3: #212121;
+  --c4: rgb(0, 94, 255);
+}
+
+/* a - main */
+.a-main {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  height: auto;
+  max-height: 10%;
+  width: 100%;
+}
+.aa {
+  padding: 1%;
+  font-size: 2vw;
+  color: gray;
+}
+.a2 {
+  display: none;
+}
+.a1:hover {
+  cursor: pointer;
+  color: rgb(255, 136, 0);
+  filter: drop-shadow(0px 0px 7px rgb(255, 136, 0));
+}
+.a2:hover {
+  cursor: pointer;
+  color: rgb(0, 89, 255);
+  filter: drop-shadow(0px 0px 7px rgb(0, 89, 255));
+}
+/* b - main */
+.b-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: var(--c1);
+}
+/* l - main */
+.l-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 60%;
+  width: 26%;
+  background-color: var(--c3);
+  filter: drop-shadow(0px 0px 15px black);
+  border-radius: 5px;
+}
+.ll {
+  font-weight: 300;
+}
+.lp1 {
+  font-size: 1vw;
+  width: 90%;
+  color: gray;
+}
+.lp2 {
+  height: 1%;
+  width: 90%;
+  background-color: transparent;
+  border-bottom: 2px solid gray;
+  font-weight: 600;
+  font-size: 1.4vw;
+  padding: 1%;
+}
+.lp2:focus {
+  border-bottom: 2px solid var(--c4);
+}
+.lp3 {
+  font-size: 1vw;
+  margin: 9%;
+  color: gray;
+}
+.lp3:hover {
+  cursor: pointer;
+  color: var(--c4);
+  filter: drop-shadow(0px 0px 7px var(--c4));
+}
+.l1 {
+  font-weight: 400;
+  color: var(--c4);
+  filter: drop-shadow(0px 0px 7px var(--c4));
+  letter-spacing: 3px;
+}
+.l6 {
+  display: none;
+}
+.l7 {
+  display: none;
+}
+.l10 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: var(--c4);
+  padding: 5px;
+  width: 90%;
+  font-size: 1.4vw;
+  font-weight: 500;
+  border-radius: 3px;
+  color: white;
+}
+.l10:hover {
+  color: rgb(176, 176, 176);
+}
+
+/* row */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 90%;
+  height: auto;
+  max-height: 4%;
+}
+
+/* notify */
+.notify {
+  opacity: 0%;
+  margin: 5%;
+  z-index: 1;
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  height: auto;
+  width: auto;
+  padding: 1%;
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin-bottom: 35%;
+  border-bottom: 2px solid rgb(9, 255, 0);
+}
+.notText {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2%;
+  width: auto;
+  min-width: 15vw;
+  height: auto;
+  font-size: 1vw;
+}
+.titleNot {
+  font-size: 1.2vw;
+  font-weight: 700;
+}
+.textNot {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-weight: 500;
+}
+.pdIcon {
+  display: none;
+  font-size: 3vw;
+}
+.suNot {
+  color: rgb(0, 255, 0);
+  filter: drop-shadow(0px 0px 5px rgb(0, 255, 0, 0.5));
+}
+.alNot {
+  color: rgb(255, 208, 0);
+  filter: drop-shadow(0px 0px 5px rgb(255, 208, 0, 0.5));
+}
+.erNot {
+  color: red;
+  filter: drop-shadow(0px 0px 5px rgb(255, 0, 0, 0.5));
+}
+.sumir {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  body .l-main {
+    height: 25%;
+    width: 40%;
+  }
+}

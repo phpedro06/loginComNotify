@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+            integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" 
+            crossorigin="anonymous">
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <title>Base</title>
+        <link rel="shortcut icon" href="./img/gato.webp" type="image/x-icon">
+    </head>
+    <body>
+        <div class="notify"> 
+            <div class="notText">
+                <p class="titleNot"></p>
+                <p class="textNot"></p>
+            </div>
+            <div class="notIcons">
+                <ion-icon class="suNot pdIcon" name="checkmark-circle-outline"></ion-icon>
+                <ion-icon class="alNot pdIcon" name="alert-circle-outline"></ion-icon>
+                <ion-icon class="erNot pdIcon" name="close-circle-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="a-main">
+            <ion-icon onclick="dia()" class="a1 aa" name="sunny"></ion-icon>
+            <ion-icon onclick="noite()" class="a2 aa" name="moon"></ion-icon>
+        </div>
+        <div class="b-main">
+            <form class="l-main">
+                <p class="l1 ll">Realize o login</p>
+                <br>
+                <br>
+                <label onclick="abrirEmail()" for="user" class="l2 ll lp1">Usuario:</label>
+                <input onclick="abrirEmail()" onblur="fecharEmail()" type="text" class="l3 ll lp2" name="user" id="user">
+                <br>
+                <label onclick="abrirSenha()" for="passw" class="l4 ll lp1">Senha:</label>
+                <input onclick="abrirSenha()" onblur="fecharSenha()" type="password" class="l5 ll lp2" name="passw" id="passw">
+                <br>
+                <label onclick="abrirSenha2()" for="cPassW" class="l6 ll lp1">Confirmar senha:</label>
+                <input onclick="abrirSenha2()" onblur="fecharSenha2()" type="password" class="l7 ll lp2" name="passw" id="passw">
+                <br>
+                <div class="row">
+                    <p onclick="showL7()" class="l8 ll lp3">Registrar</p>
+                    <p class="l9 ll lp3">Esqueceu a senha?</p>
+                </div>
+                <br>
+                <p onclick="resetP()" class="l10 ll">Login</p>
+            </form>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
